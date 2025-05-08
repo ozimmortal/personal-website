@@ -3,28 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oliyad | Personal Website</title>
+    <title>Oliyad Zelalem | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <img src="assets/profile.jpg" alt="profile">
-        </div>
-        <div class="header">
-            <h1> Hi👋, I am Oliyad Zelalem</h1>
-        </div>
-    
-        <div class="about">
-            <p>I am a Third year Software Engineering Student with deep passion about web development and web technologies.This is a sample website showing my html and css skills</p>
-            <a href="https://github.com/ozimmortal"><img src="/assets/github-logo.png" alt="github logo"></a>
-        </div>
-    </div>
-    <div class="footer">
-        
-        <p>Made by oliyad zelalem, ugr/31100/15 , section 2.</p>
-        <p>2025</p>
-    </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">OZ</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="container">
+        <section id="home" class="hero">
+            <div class="profile">
+                <img src="assets/profile.jpg" alt="Oliyad Zelalem">
+            </div>
+            <div class="hero-content">
+                <h1>Hi👋, I'm Oliyad Zelalem</h1>
+                <h2>Software Engineering Student &  Backend Developer</h2>
+                <div class="social-links">
+                    <a href="https://github.com/ozimmortal" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/oliyad-zelalem" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/oliyadza" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="https://x.com/oliyadza" class="cta-button">Get In Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a third-year Software Engineering student with a passion for web development and cutting-edge technologies. I enjoy creating responsive, user-friendly websites and applications that solve real-world problems.</p>
+                <div class="education">
+                    <h3>Education</h3>
+                    <p>BSc in Software Engineering (Expected 2027)</p>
+                    <p>Adama Science and Technology University, Ethiopia</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Solana Wallet Analyzer</h3>
+                    <p>A comprehensive dashboard for analyzing Solana wallet transactions, balances, and NFT holdings with real-time blockchain data integration.</p>
+                    <a href="https://www.solpluse.com/" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Real-Time Whiteboard App</h3>
+                    <p>A collaborative whiteboard application enabling multiple users to draw simultaneously with socket.io for real-time synchronization.</p>
+                    <a href="https://github.com/ozimmortal/collab-whiteboard-app" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Table Extractor</h3>
+                    <p>An AI-powered tool that automatically detects and extracts tabular data from images and PDF documents into structured formats.</p>
+                    <a href="" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Bulma</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>express</li>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>Php</li>
+                        <li>Go</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Docker</li>
+                        <li>Postman</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Oliyad Zelalem. All rights reserved.</p>
+            <p>ugr/31100/15, Section 2</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </div>
+    </footer>
 </body>
-</html> 
+</html>
